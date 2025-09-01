@@ -1,1 +1,1 @@
-# cs573_projectSite
+# CS 579 Web Programming II Project Site
