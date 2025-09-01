@@ -130,5 +130,31 @@ footer a:hover {
   color: var(--wineyellow);
 }
 
+section {
+  width: 80%;
+  margin: 3rem;
+}
+
+.section-title{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.hobbies-card {
+  background-color: var(--kingtide);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+}
 
 @media only screen and (max-width: 768px) {}
