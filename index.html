@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lab 1</title>
-    <link href="css/main.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
@@ -12,10 +12,15 @@
   </head>
   <body>
     <header class="oxygen-mono-regular">
-      <div><span><img id="profile-photo" src="./assets/images/profile.jpg" alt="me"/><h1>Austin<br/>Brummett</h1></span></div>
+      <div>
+        <img id="profile-photo" src="./assets/images/profile.jpg" alt="me">
+        <h1>Austin<br>Brummett</h1>
+      </div>
       <nav id="navbar">
-        <li><a href="#hobbies">Hobbies</a></li>
-        <li><a href="#dream_accomplishment">Dream_Accomplishment</a></li>
+        <ul>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#dream_accomplishment">Dream_Accomplishment</a></li>
+        </ul>
       </nav>
     </header>
     <main class="oxygen-regular">
@@ -24,7 +29,7 @@
             <h2>Hobbies</h2>
         </div>
         <div class="hobbies-grid">
-          <div class="hobbies-card">
+            <div class="hobbies-card">
 
             <div class="hobbies-card-title">
             <h3> Brazilian Jiujitsu </h3>
@@ -105,17 +110,33 @@
       <div class="section-title">
         <h2>Dream Accomplishment</h2>
       </div>
-      <article>
+      <p>
           A dream accomplishment of mine is getting my black belt in Brazilian
           Jiujitsu. I'm currently a purple belt and it will probably still be at
           least another 5-6 years before I see that dream come to anything close
           to fruition. The shortest possible time to get it is 10 years and
           that's with a much more consistent training schedule than I have had
           the oppurtunity to keep up with.
-      </article>
+      </p>
     </section>
     <section id="gallery">
-      <h2>Gallery</h2>
+        <div class="section-title">
+          <h2>Gallery</h2>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-grid">
+            <button id="gallery-prev"><i class="bi bi-caret-left-fill"></i></button>
+            <div class="gallery">
+            <img class="visible" src="./assets/images/gallery/IMG_3205.jpg" alt="Bay of water in
+              Buffalo">
+            <img class="hidden" src="./assets/images/gallery/20140128_155058.jpg" alt="My Cat">
+            <img class="hidden" src="./assets/images/gallery/20140714_184340.jpg" alt="Mexico
+              City Beach, Florida">
+            <img class="hidden" src="./assets/images/gallery/Snapchat-915565640.jpg" alt="Kiwi">
+            </div>
+            <button id="gallery-next"><i class="bi bi-caret-right-fill"></i></button>
+          </div>
+        </div>
     </section>
     </main>
     <footer class="oxygen-mono-regular">
@@ -130,5 +151,6 @@
         <p>&copy; Austin Brummett 2025</p>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
